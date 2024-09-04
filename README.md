@@ -3,6 +3,7 @@
 ## Summary
 This project involves an exploratory analysis of the Japanese Yen (YEN) to US Dollar (USD) exchange rate and predicting future values using a Random Forest Classifier. The data is sourced from the Yahoo Finance API, covering the period from January 1, 2002, to December 31, 2022.
 
+The initial model was refined by adding new features and tining hyperparametres through grid search, resulting in an imporved prediction score of 0.625.
 
 ## Preprocessing
 - Checked for missing values
@@ -102,3 +103,6 @@ This project involves an exploratory analysis of the Japanese Yen (YEN) to US Do
 - Econimic Indicators such as interest rates, inflation rates, unemployment rates, GDP growth, trade balance, and monetary policies from both Japan and the US has been ignored for this exercise.
 - The current data only considers daily adjusted close prices. A more granular breakdown, such as hourly or minute-by-minute prices, could improve precision scores.
 - A Global News Sentiment Analysis leverageing Natural Language Processing (NLP) would result in more accurate result.
+
+## Conclusion
+This project conducts an exploratory analysis of the Japanese Yen (YEN) to US Dollar (USD) exchange rate from January 1, 2002, to December 31, 2022, using data from Yahoo Finance API, and aims to predict future exchange rates using a Random Forest Classifier. It includes preprocessing steps like checking for missing values and data types and visualizing trends with new features like "Month of Year" and "Day of Week." The initial model was refined by adding new features and tuning hyperparameters through grid search, resulting in an improved prediction score of 0.625. Backtesting demonstrated moderate predictive power, and further enhancements could involve incorporating macroeconomic indicators, cross-currency correlations, intraday data, and news sentiment analysis to capture a more comprehensive set of factors influencing exchange rates.
