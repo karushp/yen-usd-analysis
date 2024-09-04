@@ -84,17 +84,18 @@ This project involves an exploratory analysis of the Japanese Yen (YEN) to US Do
 ## Improving the Model
 - Updated the Random Forest Classifier model with new parameters
 ```python
-  model = RandomForestClassifier(n_estimators=200, min_samples_split=50, random_state=1)
+  model = RandomForestClassifier(n_estimators=200, min_samples_split=30, max_depth=3, random_state=1)
 ```
 
 - Redefining predict model to increase the threshold of 60% for more precision
 
 - Re-ran the backtesting
 ``` plaintext
-    0.0    2102
-    1.0     348
+    0.0    2386
+    1.0      64
+
 ```
-- Improved prediction score : **Prediction Score : 0.5402**
+- Improved prediction score : **Prediction Score : 0.625**
 
 ## Limitations
 - The USD/YEN exchange rate is influenced by other currencies; a CROSS-CURRENCY CORRELATION analysis is needed to determine impact on the USD/YEN valuation.
