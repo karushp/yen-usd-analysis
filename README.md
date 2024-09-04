@@ -28,9 +28,9 @@ The initial model was refined by adding new features and tining hyperparametres 
 ## Data Visualisation
 - Added new columns for "Month of Year" and "Day of Week".
 - Plotted the Adjusted Close Price to observe trends.
-- Created box plots for "Month of Year" and "Day of Week".
-![alt text](images_RFC/data_visulisation.png)
+- Created line graph and box plots for "Month of Year" and "Day of Week".
 
+![alt text](images_RFC/data_visualization.png)
 
 ## Target and Features
 - Created a `Target` column representing the difference between the current day's price and the next day's price.
